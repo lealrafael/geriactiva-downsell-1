@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#087d80">
+    <meta name="description" content="Pausas Activas con Memoria — complemento digital GeriActiva.">
+    <title>Pausas Activas con Memoria | GeriActiva</title>
+    <link rel="stylesheet" href="assets/css/ofertas.css">
+    <style>
+        .theme-three .wheel {
+            background: conic-gradient(from 0deg, #fff 0deg 1deg, #f0bd56 1deg 179deg, #fff 179deg 181deg, #087d80 181deg 359deg, #fff 359deg 360deg);
+            box-shadow: 0 0 0 5px #087d80, 0 18px 30px #0002, inset 0 0 0 4px #ffffff80;
+            transition: transform 8s cubic-bezier(.22, .62, .18, 1);
+        }
+
+        .theme-three .wheel::after {
+            content: "";
+            position: absolute;
+            inset: 8px;
+            border: 2px solid #ffffff80;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .theme-three .wheel .half {
+            text-shadow: 0 1px 3px #0004;
+        }
+
+        .theme-three .wheel .hub {
+            background: linear-gradient(145deg, #b44970, #812b50);
+            box-shadow: 0 2px 6px #0004;
+        }
+
+        .theme-three .wheel.spinning {
+            transform: rotate(990deg);
+        }
+    </style>
+</head>
+
+<body class="theme-three">
+    <main>
+        <article class="panel">
+            <div class="brand">GeriActiva</div>
+            <p class="eyebrow">Edición breve</p>
+            <h1>Una forma más sencilla de empezar, por menos.</h1>
+            <p class="intro">Descubre Pausas Activas con Memoria: propuestas breves y sentadas para acompañar sin
+                prisas.</p>
+            <div class="wheel-wrap">
+                <div class="wheel" id="wheel" aria-label="Rueda promocional con segmentos US$ 20 y 50% OFF"><span
+                        class="half left">US$ 20</span><span class="half right">50% OFF</span><span class="hub"></span>
+                </div>
+            </div><button class="cta" id="spin-wheel" type="button">GIRAR AHORA</button>
+            <section class="reveal" id="reveal" aria-live="polite">
+                <h2>🎉 ¡Se reveló tu oferta: 50% OFF!</h2>
+                
+                <div class="product" role="img"
+                    aria-label="Representación gráfica del cuaderno Pausas Activas con Memoria"><span
+                        class="logo">GeriActiva · Cuaderno digital</span><strong>Pausas Activas con
+                        Memoria</strong><small>10 pausas de 8 a 10 minutos · 25 páginas</small></div>
+                <ul class="benefits">
+                    <li>✓ 10 pausas breves</li>
+                    <li>✓ Actividades en posición sentada</li>
+                    <li>✓ Hojas y registro sencillo</li>
+                </ul>
+                <div class="price"><small>Precio de esta oferta</small>US$ 5,90</div><button class="cta"
+                    id="accept-downsell-1" type="button" data-action="accept">Quiero la edición breve</button>
+            </section><button class="decline" id="reject-downsell-1" type="button" data-action="reject">No, continuar
+                sin añadirla</button>
+            <p id="status" class="status" aria-live="polite"></p>
+            <p class="note">Producto digital educativo y recreativo. No sustituye evaluación clínica ni tratamiento
+                individual. Compra aún no habilitada.</p>
+        </article>
+    </main>
+    <script defer src="assets/js/ofertas.js"></script>
+</body>
+
+</html>
