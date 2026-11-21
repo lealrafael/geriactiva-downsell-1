@@ -64,15 +64,30 @@
                     <li>✓ Actividades en posición sentada</li>
                     <li>✓ Hojas y registro sencillo</li>
                 </ul>
-                <div class="price"><small>Precio de esta oferta</small>US$ 5,90</div><a class="cta" id="accept-downsell-1" href="https://pay.cakto.com.br/qk97hcn_1342393" rel="noopener noreferrer">Quiero la edición breve</a>
-            </section><button class="decline" id="reject-downsell-1" type="button" data-action="reject">No, continuar
-                sin añadirla</button>
+                <div class="price"><small>Precio de esta oferta</small>US$ 5,90</div></section>
+            <cakto-upsell-buttons class="cakto-offer-buttons">
+                <cakto-upsell-accept id="accept-downsell-1"
+                    bg-color="#0f7865"
+                    text-color="#ffffff"
+                    upsell-accept-url="https://geriactiva-upsell-2.infoprodutosbr99.workers.dev/"
+                    offer-id="qk97hcn"
+                    app-base-url="https://app.cakto.com.br"
+                    offer-type="downsell"
+                    upsell-reject-url="https://geriactiva-upsell-2.infoprodutosbr99.workers.dev/">
+                    Sí, quiero la oferta
+                </cakto-upsell-accept>
+                <cakto-upsell-reject id="reject-downsell-1"
+                    upsell-reject-url="https://geriactiva-upsell-2.infoprodutosbr99.workers.dev/">
+                    No, no quiero aprovechar la oferta
+                </cakto-upsell-reject>
+            </cakto-upsell-buttons>
             <p id="status" class="status" aria-live="polite"></p>
             <p class="note">Producto digital educativo y recreativo. No sustituye evaluación clínica ni tratamiento
                 individual.</p>
         </article>
     </main>
     <script defer src="assets/js/ofertas.js"></script>
+    <script defer src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
 </body>
 
 </html>
